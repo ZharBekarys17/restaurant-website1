@@ -1,0 +1,163 @@
+.nav-list {
+    list-style-type: none;
+    display: inline;
+}
+
+.nav-list a {
+    text-decoration: none;
+}
+
+.nav-list li {
+    display: inline;
+    padding-right: 10px;
+}
+button {
+    border: none;
+    border-radius: 5%;
+    background-color: chocolate;
+    padding: 15px;
+    color: white;
+}
+nav {
+    display: none;
+}
+
+header p {
+    display: inline;
+    position: relative;
+}
+
+.banner, .about-us {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us {
+    flex-direction: column-reverse;
+    gap:25px;
+}
+.about-us img {
+    height: 450px;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 5%;
+}
+.about-us-texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* just like <br> but better */
+    white-space: pre;
+}
+.offer {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-bottom: 90px;
+    white-space: pre;
+}
+
+.offer-card {
+    width: 100%;
+    /* align-items: center; */
+}
+.labble {
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+
+.three-box-border {
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+    border-radius: 25%;
+    box-shadow: 0.5 0.5 0.5 ;
+    border: 0.5px solid white;
+    width: 100%;
+}
+.brown-box {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background-color: chocolate;
+    border: 1px solid chocolate;
+    width: 5px;
+    height: 5px;
+    z-index: 1;
+}
+.three-box img {
+    height: 50px;
+    width: 50px;
+}
+
+.first-box {
+    width: 50%;
+    box-shadow: rgb(0,0,0,0.35) 0px 5px 15px;
+    border-radius: 10%;
+}
+.fit-back {
+    white-space: pre;
+}
+.information {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 0px;
+}
+.inf-h1 {
+    display: flex;
+    gap: 5px;
+}
+.information ul{
+    list-style: none;
+}
+.information li {
+    position: relative;
+    left: 0px;
+}
+@media only screen and (min-width: 1024px) and (max-width: 1500px) {
+    body {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    nav {
+        display: inline;
+        position: absolute;
+        right: 0px;
+    }
+
+    .banner, .about-us, .offers {
+        flex-direction: row;
+    }
+
+    .offer-card {
+        width: 33%;
+    }
+    .about-us {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+    .banner {
+        margin-bottom: 120px;
+    }
+    .about-us img {
+        width: 700px;
+        height: 300px;
+    }
+    .offer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .offer-card {
+        display: flex;
+        flex-direction: row;
+        gap:25px;
+    }
+}
